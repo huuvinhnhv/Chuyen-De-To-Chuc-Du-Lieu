@@ -1,0 +1,4 @@
+python 3.11x
+cai cac thu vien sau:
+music21: pip instal music21
+pygame: pip instal pygame

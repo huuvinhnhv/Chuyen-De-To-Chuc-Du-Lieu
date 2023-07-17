@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\HUS\HK3\CD TCDL\BaiTap2\BaiTap2\Source.cpp(440,19): warning C4838: conversion from 'int' to 'double' requires a narrowing conversion
+D:\HUS\HK3\CD TCDL\BaiTap2\BaiTap2\Source.cpp(441,19): warning C4838: conversion from 'int' to 'double' requires a narrowing conversion
+D:\HUS\HK3\CD TCDL\BaiTap2\BaiTap2\Source.cpp(442,19): warning C4838: conversion from 'int' to 'double' requires a narrowing conversion
+  BaiTap2.vcxproj -> D:\HUS\HK3\CD TCDL\BaiTap2\x64\Debug\BaiTap2.exe

@@ -1,0 +1,28 @@
+<root>
+	<parent>
+		<child>
+			<subelement>
+				value1
+			</subelement>
+			<subelement>
+				value2
+			</subelement>
+		</child>
+		<child>
+			<subelement3>
+				value3
+			</subelement3>
+			<subelement3>
+				value4
+			</subelement3>
+		</child>
+		<friend>
+			<subelement3>
+				value3
+			</subelement3>
+			<subelement3>
+				value4
+			</subelement3>
+		</friend>
+	</parent>
+</root>

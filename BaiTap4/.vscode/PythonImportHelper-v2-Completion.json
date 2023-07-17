@@ -1,0 +1,477 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "StringVar",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "StringVar",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "music21",
+        "description": "music21",
+        "isExtraImport": true,
+        "detail": "music21",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "music21",
+        "description": "music21",
+        "isExtraImport": true,
+        "detail": "music21",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "xml.etree.ElementTree",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xml.etree.ElementTree",
+        "description": "xml.etree.ElementTree",
+        "detail": "xml.etree.ElementTree",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "MusicXMLReader",
+        "kind": 6,
+        "importPath": "21880159.source.main",
+        "description": "21880159.source.main",
+        "peekOfCode": "class MusicXMLReader:\n    def __init__(self, file_path):\n        self.file_path = file_path\n        self.tree = ET.parse(file_path)\n        self.root = self.tree.getroot()\n        self.TONG_MAPPING = {\n            -7: 'Cb',\n            -6: 'Gb',\n            -5: 'Db',\n            -4: 'Ab',",
+        "detail": "21880159.source.main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "21880159.source.main",
+        "description": "21880159.source.main",
+        "peekOfCode": "class Player:\n    def __init__(self):\n        self.playing = False\n        self.file_path = None\n        self.stream = None\nclass Controller:\n    def __init__(self, player):\n        self.player = player\n    def remove_dynamics(self, measure_index, note_index):\n        if note_index <= -1 or measure_index <= -1:",
+        "detail": "21880159.source.main",
+        "documentation": {}
+    },
+    {
+        "label": "Controller",
+        "kind": 6,
+        "importPath": "21880159.source.main",
+        "description": "21880159.source.main",
+        "peekOfCode": "class Controller:\n    def __init__(self, player):\n        self.player = player\n    def remove_dynamics(self, measure_index, note_index):\n        if note_index <= -1 or measure_index <= -1:\n            return f\"Index < 0!\"\n        tree = ET.parse(self.player.file_path)\n        measure = tree.findall('.//measure')[measure_index]\n        count = -1\n        for i, data in enumerate(measure):",
+        "detail": "21880159.source.main",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "21880159.source.main",
+        "description": "21880159.source.main",
+        "peekOfCode": "class View:\n    def __init__(self, master, controller):\n        self.master = master\n        self.controller = controller\n        self.open_button = tk.Button(\n            master, text=\"Open\", command=self.open_file,\n            bg=\"orange\", fg=\"white\", font=(\"Arial\", 12), width=10\n        )\n        self.label_for_file_name = tk.Label(\n            master, text=\"File name:\", bg=\"gray\", fg=\"white\", font=(\"Arial\", 12), width=10, anchor=\"e\")",
+        "detail": "21880159.source.main",
+        "documentation": {}
+    },
+    {
+        "label": "Application",
+        "kind": 6,
+        "importPath": "21880159.source.main",
+        "description": "21880159.source.main",
+        "peekOfCode": "class Application:\n    def __init__(self, master):\n        self.player = Player()\n        self.controller = Controller(self.player)\n        self.view = View(master, self.controller)\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    root.title(\"Music XML Basic Editor\")\n    root.geometry(\"800x600\")\n    app = Application(root)",
+        "detail": "21880159.source.main",
+        "documentation": {}
+    },
+    {
+        "label": "Controller",
+        "kind": 6,
+        "importPath": "controller",
+        "description": "controller",
+        "peekOfCode": "class Controller:\n    def __init__(self, view, model):\n        self.view = view\n        self.model = model\n        self.view.set_controller(self)\n    def play_music(self):\n        if not self.model.playing:\n            pygame.mixer.init()\n            pygame.mixer.music.load(self.model.root.find('music').text)\n            pygame.mixer.music.play(start=self.model.position)",
+        "detail": "controller",
+        "documentation": {}
+    },
+    {
+        "label": "get_dynamics_tag",
+        "kind": 2,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "def get_dynamics_tag(dynamics_symbol):\n    dynamics_to_volume = {\n        \"ppp\": 17.78,\n        \"pp\": 36.67,\n        \"p\": 54.44,\n        \"mp\": 71.11,\n        \"mf\": 88.89,\n        \"f\": 106.67,\n        \"ff\": 124.44,\n        \"fff\": 140.00",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "search_dynamic",
+        "kind": 2,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "def search_dynamic(measure_index, note_index):\n    tree = ET.parse('DemoDynamic.musicxml')\n    measure = tree.findall('.//measure')[measure_index]\n    count = -1\n    for i, data in enumerate(measure):\n        if data.tag == 'note':\n            count += 1\n            if count == note_index:\n                if measure[i-1].tag == 'direction' and measure[i-1].findall('.//dynamics') != None:\n                    temp = measure[i-1].find('.//dynamics')",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "tree",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "tree = ET.parse('DemoDynamic.musicxml')\ndirection = ET.Element(\"direction\", {'placement': 'below'})\ndirection_type = ET.SubElement(direction, 'direction_type')\ndynamics = ET.SubElement(direction_type, 'dynamics')\np = ET.SubElement(dynamics, 'p')\nsound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "direction",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "direction = ET.Element(\"direction\", {'placement': 'below'})\ndirection_type = ET.SubElement(direction, 'direction_type')\ndynamics = ET.SubElement(direction_type, 'dynamics')\np = ET.SubElement(dynamics, 'p')\nsound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)\ndef get_dynamics_tag(dynamics_symbol):",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "direction_type",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "direction_type = ET.SubElement(direction, 'direction_type')\ndynamics = ET.SubElement(direction_type, 'dynamics')\np = ET.SubElement(dynamics, 'p')\nsound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)\ndef get_dynamics_tag(dynamics_symbol):\n    dynamics_to_volume = {",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "dynamics",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "dynamics = ET.SubElement(direction_type, 'dynamics')\np = ET.SubElement(dynamics, 'p')\nsound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)\ndef get_dynamics_tag(dynamics_symbol):\n    dynamics_to_volume = {\n        \"ppp\": 17.78,",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "p = ET.SubElement(dynamics, 'p')\nsound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)\ndef get_dynamics_tag(dynamics_symbol):\n    dynamics_to_volume = {\n        \"ppp\": 17.78,\n        \"pp\": 36.67,",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "sound",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "sound = ET.SubElement(direction, 'sound', {'dynamics': '54.44'})\n# for i, data in enumerate(child):\n#     if data.tag == 'direction' and child[i+1].tag == 'child':\n#         data.get()\n# child.insert(1, direction)\ndef get_dynamics_tag(dynamics_symbol):\n    dynamics_to_volume = {\n        \"ppp\": 17.78,\n        \"pp\": 36.67,\n        \"p\": 54.44,",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "get_G_clef",
+        "kind": 2,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "def get_G_clef(number):\n    clef = ET.Element(\"clef\", {\"number\": f\"{number}\"})\n    sign = ET.SubElement(clef, \"sign\")\n    sign.text = \"G\"\n    line = ET.SubElement(clef, \"line\")\n    line.text = \"2\"\n    clef_octave = ET.SubElement(clef, \"clef-octave-change\")\n    clef_octave.text = \"-1\"\n    return clef\ndef get_F_clef():",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "get_F_clef",
+        "kind": 2,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "def get_F_clef():\n    clef = ET.Element(\"clef\", {\"number\": \"2\"})\n    sign = ET.SubElement(clef, \"sign\")\n    sign.text = \"F\"\n    line = ET.SubElement(clef, \"line\")\n    line.text = \"4\"\n    return clef\ntree = ET.parse('testkey.musicxml')\nmeasure = tree.findall('.//measure')[0]\n# get divisions",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "tree",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "tree = ET.parse('testkey.musicxml')\nmeasure = tree.findall('.//measure')[0]\n# get divisions\nattributes_elements = measure.find('attributes')\ndivisions_element = measure.find('attributes').find('divisions')\ndivisions_value = measure.find('attributes').find('divisions').text\nnew_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "measure",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "measure = tree.findall('.//measure')[0]\n# get divisions\nattributes_elements = measure.find('attributes')\ndivisions_element = measure.find('attributes').find('divisions')\ndivisions_value = measure.find('attributes').find('divisions').text\nnew_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "attributes_elements",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "attributes_elements = measure.find('attributes')\ndivisions_element = measure.find('attributes').find('divisions')\ndivisions_value = measure.find('attributes').find('divisions').text\nnew_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "divisions_element",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "divisions_element = measure.find('attributes').find('divisions')\ndivisions_value = measure.find('attributes').find('divisions').text\nnew_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "divisions_value",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "divisions_value = measure.find('attributes').find('divisions').text\nnew_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)\nold_G_clef = attributes_elements.find('clef')",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "new_divisions",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "new_divisions = ET.Element('divisions')\nnew_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)\nold_G_clef = attributes_elements.find('clef')\nattributes_elements.remove(old_G_clef)",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "new_divisions.text",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "new_divisions.text = '2'\nstaves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)\nold_G_clef = attributes_elements.find('clef')\nattributes_elements.remove(old_G_clef)\nnew_G_clef_1 = get_G_clef(1)",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "staves_element",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "staves_element = ET.Element('staves')\nstaves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)\nold_G_clef = attributes_elements.find('clef')\nattributes_elements.remove(old_G_clef)\nnew_G_clef_1 = get_G_clef(1)\nnew_G_clef_2 = get_G_clef(2)",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "staves_element.text",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "staves_element.text = '2'\n# replace\nattributes_elements.insert(3, staves_element)\n# attributes_elements.insert(0, new_divisions)\n# attributes_elements.remove(divisions_element)\nold_G_clef = attributes_elements.find('clef')\nattributes_elements.remove(old_G_clef)\nnew_G_clef_1 = get_G_clef(1)\nnew_G_clef_2 = get_G_clef(2)\n# new_F_clef = get_F_clef()",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "old_G_clef",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "old_G_clef = attributes_elements.find('clef')\nattributes_elements.remove(old_G_clef)\nnew_G_clef_1 = get_G_clef(1)\nnew_G_clef_2 = get_G_clef(2)\n# new_F_clef = get_F_clef()\nattributes_elements.insert(4, new_G_clef_1)\nattributes_elements.insert(5, new_G_clef_2)\n# attributes_elements.append(new_F_clef)\ntree.write('testkey.musicxml')",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "new_G_clef_1",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "new_G_clef_1 = get_G_clef(1)\nnew_G_clef_2 = get_G_clef(2)\n# new_F_clef = get_F_clef()\nattributes_elements.insert(4, new_G_clef_1)\nattributes_elements.insert(5, new_G_clef_2)\n# attributes_elements.append(new_F_clef)\ntree.write('testkey.musicxml')",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "new_G_clef_2",
+        "kind": 5,
+        "importPath": "demo3",
+        "description": "demo3",
+        "peekOfCode": "new_G_clef_2 = get_G_clef(2)\n# new_F_clef = get_F_clef()\nattributes_elements.insert(4, new_G_clef_1)\nattributes_elements.insert(5, new_G_clef_2)\n# attributes_elements.append(new_F_clef)\ntree.write('testkey.musicxml')",
+        "detail": "demo3",
+        "documentation": {}
+    },
+    {
+        "label": "get_chord",
+        "kind": 2,
+        "importPath": "demp2",
+        "description": "demp2",
+        "peekOfCode": "def get_chord(chord_symbol):\n    tree = ET.parse(\"chords_3_4.xml\")\n    root = tree.getroot()\n    chords = root.findall(\"chord\")\n    for chord in chords:\n        if chord.get('name') == chord_symbol:\n            return chord\n    return 'Not found chord in data!'\nfor i, chord in enumerate(chords):\n    if i == 1:",
+        "detail": "demp2",
+        "documentation": {}
+    },
+    {
+        "label": "tree",
+        "kind": 5,
+        "importPath": "demp2",
+        "description": "demp2",
+        "peekOfCode": "tree = ET.parse(\"Conchimnon_1.musicxml\")\nchords = tree.findall(\".//measure\")\ndef get_chord(chord_symbol):\n    tree = ET.parse(\"chords_3_4.xml\")\n    root = tree.getroot()\n    chords = root.findall(\"chord\")\n    for chord in chords:\n        if chord.get('name') == chord_symbol:\n            return chord\n    return 'Not found chord in data!'",
+        "detail": "demp2",
+        "documentation": {}
+    },
+    {
+        "label": "chords",
+        "kind": 5,
+        "importPath": "demp2",
+        "description": "demp2",
+        "peekOfCode": "chords = tree.findall(\".//measure\")\ndef get_chord(chord_symbol):\n    tree = ET.parse(\"chords_3_4.xml\")\n    root = tree.getroot()\n    chords = root.findall(\"chord\")\n    for chord in chords:\n        if chord.get('name') == chord_symbol:\n            return chord\n    return 'Not found chord in data!'\nfor i, chord in enumerate(chords):",
+        "detail": "demp2",
+        "documentation": {}
+    },
+    {
+        "label": "MusicXMLReader",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MusicXMLReader:\n    def __init__(self, file_path):\n        self.file_path = file_path\n        self.tree = ET.parse(file_path)\n        self.root = self.tree.getroot()\n        self.TONG_MAPPING = {\n            -7: 'Cb',\n            -6: 'Gb',\n            -5: 'Db',\n            -4: 'Ab',",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Player:\n    def __init__(self):\n        self.playing = False\n        self.file_path = None\n        self.stream = None\nclass Controller:\n    def __init__(self, player):\n        self.player = player\n    def remove_dynamics(self, measure_index, note_index):\n        if note_index <= -1 or measure_index <= -1:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Controller",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Controller:\n    def __init__(self, player):\n        self.player = player\n    def remove_dynamics(self, measure_index, note_index):\n        if note_index <= -1 or measure_index <= -1:\n            return f\"Index < 0!\"\n        tree = ET.parse(self.player.file_path)\n        measure = tree.findall('.//measure')[measure_index]\n        count = -1\n        for i, data in enumerate(measure):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class View:\n    def __init__(self, master, controller):\n        self.master = master\n        self.controller = controller\n        self.open_button = tk.Button(\n            master, text=\"Open\", command=self.open_file,\n            bg=\"orange\", fg=\"white\", font=(\"Arial\", 12), width=10\n        )\n        self.label_for_file_name = tk.Label(\n            master, text=\"File name:\", bg=\"gray\", fg=\"white\", font=(\"Arial\", 12), width=10, anchor=\"e\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Application",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Application:\n    def __init__(self, master):\n        self.player = Player()\n        self.controller = Controller(self.player)\n        self.view = View(master, self.controller)\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    root.title(\"Music XML Basic Editor\")\n    root.geometry(\"800x600\")\n    app = Application(root)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "kind": 6,
+        "importPath": "model",
+        "description": "model",
+        "peekOfCode": "class Model:\n    def __init__(self):\n        self.tree = None\n        self.root = None\n        self.playing = False\n        self.paused = False\n        self.position = 0",
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "kind": 6,
+        "importPath": "view",
+        "description": "view",
+        "peekOfCode": "class View:\n    def __init__(self, master):\n        self.master = master\n        self.open_button = tk.Button(\n            master, text=\"Open\", command=self.open_file)\n        self.play_button = tk.Button(\n            master, text=\"Play\", command=self.controller.play_music)\n        self.pause_button = tk.Button(\n            master, text=\"Pause\", command=self.controller.pause_music)\n        self.stop_button = tk.Button(",
+        "detail": "view",
+        "documentation": {}
+    }
+]
